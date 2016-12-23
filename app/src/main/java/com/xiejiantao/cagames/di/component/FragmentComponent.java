@@ -6,6 +6,7 @@ import android.app.Activity;
 import com.xiejiantao.cagames.di.FragmentScope;
 import com.xiejiantao.cagames.di.module.FragmentModule;
 import com.xiejiantao.cagames.ui.cagames.fragment.CasualGamesFragment;
+import com.xiejiantao.cagames.ui.main.fragment.SettingFragment;
 
 import dagger.Component;
 
@@ -37,7 +38,7 @@ public interface FragmentComponent {
 //
 //    void inject(WechatMainFragment wechatMainFragment);
 //
-//    void inject(SettingFragment settingFragment);
+    void inject(SettingFragment settingFragment);
 //
 //    void inject(GoldMainFragment goldMainFragment);
 //
