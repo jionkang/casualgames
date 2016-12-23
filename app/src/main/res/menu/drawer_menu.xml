@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="类型">
+        <menu>
+            <item
+                android:id="@+id/drawer_zhihu"
+                android:icon="@mipmap/ic_launcher"
+                android:checkable="true"
+                android:checked="true"
+                android:title="休闲"/>
+        </menu>
+    </item>
+    <item android:title="选项">
+        <menu>
+            <item
+                android:id="@+id/drawer_setting"
+                android:checked="false"
+                android:icon="@mipmap/ic_drawer_setting"
+                android:checkable="true"
+                android:title="设置"/>
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@mipmap/ic_drawer_about"
+                android:checkable="true"
+                android:title="关于"/>
+        </menu>
+    </item>
+</menu>

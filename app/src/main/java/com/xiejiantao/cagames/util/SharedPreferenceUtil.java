@@ -22,7 +22,7 @@ public class SharedPreferenceUtil {
     private static final boolean DEFAULT_VERSION_POINT = false;
     private static final boolean DEFAULT_MANAGER_POINT = false;
 
-    private static final int DEFAULT_CURRENT_ITEM = Constants.TYPE_ZHIHU;
+    private static final int DEFAULT_CURRENT_ITEM = Constants.TYPE_GAMES;
 
     private static final String SHAREDPREFERENCES_NAME = "my_sp";
 

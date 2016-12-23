@@ -5,6 +5,7 @@ import android.app.Activity;
 
 import com.xiejiantao.cagames.di.ActivityScope;
 import com.xiejiantao.cagames.di.module.ActivityModule;
+import com.xiejiantao.cagames.ui.main.activity.MainActivity;
 import com.xiejiantao.cagames.ui.main.activity.WelcomeActivity;
 
 import dagger.Component;
@@ -21,7 +22,7 @@ public interface ActivityComponent {
 
     void inject(WelcomeActivity welcomeActivity);
 //
-//    void inject(MainActivity mainActivity);
+    void inject(MainActivity mainActivity);
 //
 //    void inject(ZhihuDetailActivity zhihuDetailActivity);
 //
