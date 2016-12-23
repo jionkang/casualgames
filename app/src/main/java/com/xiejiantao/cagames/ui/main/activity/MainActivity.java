@@ -14,7 +14,7 @@ import com.xiejiantao.cagames.app.Constants;
 import com.xiejiantao.cagames.base.BaseActivity;
 import com.xiejiantao.cagames.presenter.MainPresenter;
 import com.xiejiantao.cagames.presenter.contract.MainContract;
-import com.xiejiantao.cagames.ui.cagames.CasualGamesFragment;
+import com.xiejiantao.cagames.ui.cagames.fragment.CasualGamesFragment;
 import com.xiejiantao.cagames.ui.main.fragment.AboutFragment;
 import com.xiejiantao.cagames.ui.main.fragment.SettingFragment;
 import com.xiejiantao.cagames.util.SharedPreferenceUtil;
