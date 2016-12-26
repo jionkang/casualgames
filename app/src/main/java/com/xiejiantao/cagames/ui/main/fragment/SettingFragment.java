@@ -84,8 +84,8 @@ public class SettingFragment extends BaseFragment<SettingPresenter> implements C
         cbSettingImage.setOnCheckedChangeListener(this);
         cbSettingNight.setOnCheckedChangeListener(this);
 
-        cbSettingCache.setVisibility(View.GONE);
-        cbSettingImage.setVisibility(View.GONE);
+        cacheLayout.setVisibility(View.GONE);
+        noImage.setVisibility(View.GONE);
         try {
             PackageManager pm = getActivity().getPackageManager();
             PackageInfo pi = pm.getPackageInfo(getActivity().getPackageName(), PackageManager.GET_ACTIVITIES);
