@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="类型">
+    <item android:title="类型" >
         <menu>
             <item
-                android:id="@+id/drawer_zhihu"
-                android:icon="@mipmap/ic_launcher"
+                android:id="@+id/drawer_games"
+                android:icon="@mipmap/ic_gamepad_black_24dp"
                 android:checkable="true"
                 android:checked="true"
                 android:title="休闲"/>

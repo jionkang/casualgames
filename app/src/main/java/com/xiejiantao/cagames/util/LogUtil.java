@@ -9,7 +9,7 @@ import com.xiejiantao.cagames.BuildConfig;
 public class LogUtil {
 
     public static boolean isDebug = BuildConfig.DEBUG;
-    private static final String TAG = "com.codeest.geeknews";
+    private static final String TAG = "com.xiejiantao.cagames";
 
     public static void e(String tag,Object o) {
         if(isDebug) {

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="result_level">
+        <item>初级</item>
+        <item>中级</item>
+        <item>高级</item>
+        <item>火眼金睛</item>
+        <item>法眼</item>
+        <item>神</item>
+    </string-array>
+</resources>

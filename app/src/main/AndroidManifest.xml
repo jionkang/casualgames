@@ -27,6 +27,17 @@
         <activity android:name=".ui.main.activity.MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/MainTheme"/>
+        <activity android:name=".m2048.M2048Activity"
+            android:launchMode="singleTop"
+            android:theme="@style/MainTheme"/>
+
+        <activity android:name=".colorgame.ColorActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MainTheme"/>
+
+        <activity android:name=".fivechess.game.activity.SingleGameActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MainTheme"/>
     </application>
 
 </manifest>

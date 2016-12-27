@@ -27,4 +27,9 @@
         <item name="android:windowIsTranslucent">false</item>
     </style>
 
+    <style name="MyCheckBox" parent="AppTheme">
+        <item name="colorControlNormal">@color/comment_text</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
 </resources>

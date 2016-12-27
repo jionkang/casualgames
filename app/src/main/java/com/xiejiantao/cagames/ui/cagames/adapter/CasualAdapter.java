@@ -1,5 +1,6 @@
 package com.xiejiantao.cagames.ui.cagames.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -11,8 +12,12 @@ import android.widget.TextView;
 
 import com.xiejiantao.cagames.R;
 import com.xiejiantao.cagames.app.App;
+import com.xiejiantao.cagames.colorgame.ColorActivity;
 import com.xiejiantao.cagames.component.ImageLoader;
+import com.xiejiantao.cagames.fivechess.game.activity.SingleGameActivity;
+import com.xiejiantao.cagames.m2048.M2048Activity;
 import com.xiejiantao.cagames.model.bean.CasualListBean;
+import com.xiejiantao.cagames.util.StartActivityUtil;
 import com.xiejiantao.cagames.util.SystemUtil;
 
 import java.util.List;
@@ -41,18 +46,33 @@ public class CasualAdapter extends RecyclerView.Adapter<CasualAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
 //Glide在加载GridView等时,由于ImageView和Bitmap实际大小不符合,第一次时加载可能会变形(我这里出现了放大),必须在加载前再次固定ImageView大小
         ViewGroup.LayoutParams lp = holder.ivBg.getLayoutParams();
         lp.width = (App.SCREEN_WIDTH - SystemUtil.dp2px(mContext,12)) / 2;
         lp.height = SystemUtil.dp2px(mContext,120);
 
-        ImageLoader.load(mContext,mList.get(position).getThumbnail(),holder.ivBg);
+//        ImageLoader.load(mContext,mList.get(position).getThumbnail(),holder.ivBg);
+        holder.ivBg.setImageResource(mList.get(position).getResourceId());
         holder.tvKind.setText(mList.get(position).getName());
         holder.tvDes.setText(mList.get(position).getDescription());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (position==0){
+                    Intent intent = new Intent();
+                    intent.setClass(mContext, M2048Activity.class);
+                    StartActivityUtil.startActivity(intent,(Activity)mContext);
+                }else if (position==1){
+                    Intent intent = new Intent();
+                    intent.setClass(mContext, ColorActivity.class);
+                    StartActivityUtil.startActivity(intent,(Activity)mContext);
+                }else {
+                    Intent intent = new Intent();
+                    intent.setClass(mContext, SingleGameActivity.class);
+                    StartActivityUtil.startActivity(intent,(Activity)mContext);
+                }
+
 //                Intent intent = new Intent();
 //                intent.setClass(mContext, SectionActivity.class);
 //                intent.putExtra("id",mList.get(holder.getAdapterPosition()).getId());

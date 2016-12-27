@@ -1,5 +1,6 @@
 package com.xiejiantao.cagames.presenter;
 
+import com.xiejiantao.cagames.R;
 import com.xiejiantao.cagames.base.RxPresenter;
 import com.xiejiantao.cagames.model.bean.CasualListBean;
 import com.xiejiantao.cagames.model.bean.CasualListBean.DataBean;
@@ -42,15 +43,18 @@ public class CasualGamesPresenter extends RxPresenter<CasualGamesContract.View> 
                         DataBean bean1 = new DataBean();
                         bean1.setName("2048");
                         bean1.setThumbnail("http://pic3.zhimg.com/91125c9aebcab1c84f58ce4f8779551e.jpg");
+                        bean1.setResouceId(R.drawable.p2048);
                         list.add(bean1);
                         DataBean bean2 = new DataBean();
 
-                        bean2.setName("heibai");
+                        bean2.setName("找色差");
                         bean2.setThumbnail("http://pic3.zhimg.com/91125c9aebcab1c84f58ce4f8779551e.jpg");
+                        bean2.setResouceId(R.drawable.colordiff);
                         list.add(bean2);
 
                         DataBean bean3 = new DataBean();
-                        bean3.setName("heibai");
+                        bean3.setName("五子棋");
+                        bean3.setResouceId(R.drawable.wuziqi);
                         bean3.setThumbnail("http://pic3.zhimg.com/91125c9aebcab1c84f58ce4f8779551e.jpg");
                         list.add(bean3);
                         bean.setData(list);

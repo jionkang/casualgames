@@ -26,4 +26,13 @@
     <color name="comment_at">#5d8698</color>
     <color name="preferences_title">#00618c</color>
     <color name="gold_title">#3F51B5</color>
+
+    <color name="text_white">#f9f6f2</color>
+    <color name="text_black">#776e65</color>
+    <color name="text_brown">#d6cdc4</color>
+    <color name="background">#faf8ef</color>
+
+    <color name="text_color">#FFFFF9FB</color>
+    <color name="com">#345678</color>
+    <color name="par">#ffaaffaa</color>
 </resources>

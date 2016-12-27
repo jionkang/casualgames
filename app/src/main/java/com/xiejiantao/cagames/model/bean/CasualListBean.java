@@ -30,6 +30,7 @@ public class CasualListBean {
         private int id;
         private String name;
         private String thumbnail;
+        private int resId;
 
         public String getDescription() {
             return description;
@@ -61,6 +62,13 @@ public class CasualListBean {
 
         public void setThumbnail(String thumbnail) {
             this.thumbnail = thumbnail;
+        }
+
+        public void setResouceId(int resId) {
+            this.resId = resId;
+        }
+        public int getResourceId() {
+            return resId;
         }
     }
 }

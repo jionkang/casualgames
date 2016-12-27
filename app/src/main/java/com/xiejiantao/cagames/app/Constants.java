@@ -11,7 +11,6 @@ public class Constants {
 
     //================= TYPE ====================
 
-//    public static final int TYPE_ZHIHU = 101;
     public static final int TYPE_GAMES = 101;
 
     public static final int TYPE_ANDROID = 102;
@@ -51,7 +50,7 @@ public class Constants {
 
     public static final String PATH_CACHE = PATH_DATA + "/NetCache";
 
-    public static final String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "codeest" + File.separator + "GeekNews";
+    public static final String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "codeest" + File.separator + "CasualGames";
 
     //================= PREFERENCE ====================
 
@@ -68,6 +67,8 @@ public class Constants {
     public static final String SP_VERSION_POINT = "version_point";
 
     public static final String SP_MANAGER_POINT = "manager_point";
+
+    public static final String SP_ALIPAY = "ali_pay";
 
     //================= INTENT ====================
     public static final String IT_GANK_TYPE = "type";

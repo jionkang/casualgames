@@ -1,6 +1,7 @@
 package com.xiejiantao.cagames.ui.main.activity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -17,6 +18,7 @@ import com.xiejiantao.cagames.presenter.contract.MainContract;
 import com.xiejiantao.cagames.ui.cagames.fragment.CasualGamesFragment;
 import com.xiejiantao.cagames.ui.main.fragment.AboutFragment;
 import com.xiejiantao.cagames.ui.main.fragment.SettingFragment;
+import com.xiejiantao.cagames.util.LogUtil;
 import com.xiejiantao.cagames.util.SharedPreferenceUtil;
 import com.xiejiantao.cagames.util.SnackbarUtil;
 
@@ -53,7 +55,7 @@ public class MainActivity extends BaseActivity<MainPresenter>  implements MainCo
             showFragment = SharedPreferenceUtil.getCurrentItem();
             hideFragment = Constants.TYPE_GAMES;
             showHideFragment(getTargetFragment(showFragment), getTargetFragment(hideFragment));
-            mNavigationView.getMenu().findItem(R.id.drawer_zhihu).setChecked(false);
+            mNavigationView.getMenu().findItem(R.id.drawer_games).setChecked(false);
             mToolbar.setTitle(mNavigationView.getMenu().findItem(getCurrentItem(showFragment)).getTitle().toString());
             hideFragment = showFragment;
         }
@@ -74,14 +76,15 @@ public class MainActivity extends BaseActivity<MainPresenter>  implements MainCo
     private int getCurrentItem(int item) {
         switch (item) {
             case Constants.TYPE_GAMES:
-                return R.id.drawer_zhihu;
+                return R.id.drawer_games;
             case Constants.TYPE_SETTING:
                 return R.id.drawer_setting;
             case Constants.TYPE_ABOUT:
                 return R.id.drawer_about;
         }
-        return R.id.drawer_zhihu;
+        return R.id.drawer_games;
     }
+
 
     @Override
     protected int getLayout() {
@@ -102,13 +105,13 @@ public class MainActivity extends BaseActivity<MainPresenter>  implements MainCo
         mDrawerToggle=new ActionBarDrawerToggle(this,mDrawerLayout,mToolbar, R.string.drawer_open, R.string.drawer_close);
         mDrawerToggle.syncState();
         mDrawerLayout.addDrawerListener(mDrawerToggle);
-        mLastMenuItem = mNavigationView.getMenu().findItem(R.id.drawer_zhihu);
+        mLastMenuItem = mNavigationView.getMenu().findItem(R.id.drawer_games);
         loadMultipleRootFragment(R.id.fl_main_content,0,mCasualGamesFragment,mSettingFragment,mAboutFragment);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.drawer_zhihu:
+                    case R.id.drawer_games:
                         showFragment = Constants.TYPE_GAMES;
                         break;
                     case R.id.drawer_setting:

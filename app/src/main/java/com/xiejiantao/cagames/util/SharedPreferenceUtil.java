@@ -85,4 +85,12 @@ public class SharedPreferenceUtil {
     public static void setManagerPoint(boolean isFirst) {
         getAppSp().edit().putBoolean(Constants.SP_MANAGER_POINT, isFirst).apply();
     }
+
+    public static boolean getPay() {
+        return getAppSp().getBoolean(Constants.SP_ALIPAY, false);
+    }
+
+    public static void setPay(boolean isPay) {
+        getAppSp().edit().putBoolean(Constants.SP_ALIPAY, isPay).apply();
+    }
 }

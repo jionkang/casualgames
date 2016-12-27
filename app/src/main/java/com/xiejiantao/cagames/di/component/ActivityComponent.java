@@ -24,9 +24,4 @@ public interface ActivityComponent {
 //
     void inject(MainActivity mainActivity);
 //
-//    void inject(ZhihuDetailActivity zhihuDetailActivity);
-//
-//    void inject(ThemeActivity themeActivity);
-//
-//    void inject(SectionActivity sectionActivity);
 }

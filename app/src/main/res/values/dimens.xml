@@ -17,4 +17,8 @@
     <dimen name="section_image_height">140dp</dimen>
     <dimen name="gold_image_size">60dp</dimen>
     <dimen name="gold_icon_size">16dp</dimen>
+
+
+    <dimen name="boardWidth">1px</dimen>
+    <dimen name="anchorWidth">5px</dimen>
 </resources>
