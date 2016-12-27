@@ -10,4 +10,4 @@ dagger2+retrofit+okhttp+rxjava+md+mvp+butterknife+glide等新框架，游戏部�
 ![](https://github.com/jionkang/casualgames/blob/feature/1.1.1/sceens1.png)
 ![](https://github.com/jionkang/casualgames/blob/feature/1.1.1/screens2.png)
 ![](https://github.com/jionkang/casualgames/blob/feature/1.1.1/screens3.png)
-![](https://github.com/jionkang/casualgames/blob/feature/1.1.1/screebs4.png)
+![](https://github.com/jionkang/casualgames/blob/feature/1.1.1/screens4.png)
