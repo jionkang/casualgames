@@ -31,7 +31,7 @@
     <string name="setting_normal">常规</string>
     <string name="setting_other">其他</string>
 
-    <string name="about_addr">项目地址:\nhttps://github.com/codeestX/GeekNews</string>
+    <string name="about_addr">项目地址:\nhttps://github.com/jionkang/casualgames/tree/feature/1.1.1</string>
     <string name="about_author">作者:jionkang\t\t(455656631@qq.com)</string>
     <string name="about_project">项目简介:\n经典休闲小游戏合集\n为了熟悉当前Android端主流框架的使用，开发此项目。\n
         同时加入经典智力小游戏方便偶尔玩玩游戏消磨时间的人。\n
